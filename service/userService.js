@@ -1,4 +1,6 @@
 const { sendEmail, sendSMS } = require("./messageService");
+const axios = require("axios");
+const API_ENDPOINT = "https://jsonplaceholder.typicode.com";
 
 exports.register = function register(user) {
   /* DB에 회원 추가 */
@@ -12,4 +14,10 @@ exports.deregister = function deregister(user) {
   const message = "탈퇴 처리 되었습니다.";
   sendEmail(user.email, message);
   sendSMS(user.phone, message);
+};
+
+exports.findOne = function findOne(id) {
+  return axios
+    .get(`${API_ENDPOINT}/users/${id}`)
+    .then((response) => response.data);
 };
