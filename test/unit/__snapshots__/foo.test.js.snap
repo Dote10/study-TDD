@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Custom Matcher All calls and the name of the mock is written as a snapshot 1`] = `
+[MockFunction] {
+  "calls": [
+    [],
+    [
+      1,
+      2,
+    ],
+    [
+      3,
+      4,
+    ],
+    [
+      1,
+      2,
+    ],
+    [
+      1,
+      2,
+    ],
+  ],
+  "results": [
+    {
+      "type": "return",
+      "value": undefined,
+    },
+    {
+      "type": "return",
+      "value": undefined,
+    },
+    {
+      "type": "return",
+      "value": undefined,
+    },
+    {
+      "type": "return",
+      "value": undefined,
+    },
+    {
+      "type": "return",
+      "value": undefined,
+    },
+  ],
+}
+`;
